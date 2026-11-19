@@ -19,7 +19,7 @@ export const skills = [
   {
     group: 'Tools & Systems',
     items: [
-      'Git', 'GitHub', 'npm', 'VS Code', // npm y VS Code nuevos
+      'Git', 'GitHub', 'GitHub Actions', 'npm', 'VS Code', // npm y VS Code nuevos
       'Windows', 'Linux fundamentals', 'macOS', // macOS nuevo
       'Command line (PowerShell)', 'MySQL Workbench', 'Microsoft Office (including Excel)',
       'PC hardware assembly and maintenance', 'Software installation and configuration',
@@ -31,13 +31,13 @@ export const skills = [
 ]
 
 export const projects = [
-  {
-    title: 'Portfolio Website', // nuevo
-    tech: ['React', 'JavaScript', 'CSS', 'Vite'],
-    link: 'https://github.com/dsuar01',
+   {
+    title: 'Portfolio Website',
+    tech: ['React', 'JavaScript', 'CSS', 'Vite', 'GitHub Actions'],
+    link: 'https://github.com/dsuar01/dsuar01.github.io',
     points: [
-      'Built a responsive, interactive personal portfolio with reusable React components, dark/light theme and scroll animations.',
-      'Deployed with GitHub Pages and managed the code with Git and GitHub.',
+      'Built a personal portfolio with reusable React components, with all content driven from a single data file.',
+      'Set up automated deployment to GitHub Pages with GitHub Actions (CI/CD) and managed the code with Git and GitHub.',
     ],
   },
   {
