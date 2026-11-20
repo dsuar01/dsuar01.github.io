@@ -5,12 +5,14 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import Contact from './components/Contact'
+import Navbar from './components/Navbar'
 import './App.css'
 
 
 function App() {
   return (
     <main>
+      <Navbar />
       <Header />
       <About />
       <Skills />
