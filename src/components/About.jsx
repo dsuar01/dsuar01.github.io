@@ -1,10 +1,10 @@
 import { profile } from '../data'
+import SectionTitle from './SectionTitle'
 
 function About() {
   return (
     <section id="about">
-      <h2>About me</h2>
-      <p>{profile.summary}</p>
+      <SectionTitle path="/about" title="About me" />      <p>{profile.summary}</p>
     </section>
   )
 }

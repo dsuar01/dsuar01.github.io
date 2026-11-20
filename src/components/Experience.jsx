@@ -1,10 +1,11 @@
 import { experience } from '../data'
 import TimelineItem from './TimelineItem'
+import SectionTitle from './SectionTitle'
 
 function Experience() {
   return (
     <section id="experience">
-      <h2>Experience</h2>
+      <SectionTitle path="/experience" title="Experience" />
       {experience.map((job) => (
         <TimelineItem
           key={job.company}

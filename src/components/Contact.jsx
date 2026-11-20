@@ -1,9 +1,10 @@
 import { profile } from '../data'
+import SectionTitle from './SectionTitle'
 
 function Contact() {
   return (
     <section id="contact">
-      <h2>Contact</h2>
+      <SectionTitle path="/contact" title="Contact" />
       <p>I'm open to entry-level opportunities. Feel free to reach out!</p>
       <ul>
         <li>

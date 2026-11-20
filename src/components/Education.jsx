@@ -1,10 +1,11 @@
 import { education, certifications } from '../data'
 import TimelineItem from './TimelineItem'
+import SectionTitle from './SectionTitle'
 
 function Education() {
   return (
     <section id="education">
-      <h2>Education</h2>
+      <SectionTitle path="/education" title="Education" />
       {education.map((school) => (
         <TimelineItem
           key={school.school}

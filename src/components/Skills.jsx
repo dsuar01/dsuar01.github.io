@@ -1,9 +1,10 @@
 import { skills } from '../data'
+import SectionTitle from './SectionTitle'
 
 function Skills() {
   return (
     <section id="skills">
-      <h2>Skills</h2>
+      <SectionTitle path="/skills" title="Skills" />
       {skills.map((category) => (
         <div key={category.group}>
           <h3>{category.group}</h3>

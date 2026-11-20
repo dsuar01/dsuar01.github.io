@@ -1,10 +1,11 @@
 import { projects } from '../data'
 import ProjectCard from './ProjectCard'
+import SectionTitle from './SectionTitle'
 
 function Projects() {
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <SectionTitle path="/projects" title="Projects" />
       {projects.map((project) => (
         <ProjectCard
           key={project.title}
