@@ -11,8 +11,9 @@ import './App.css'
 
 function App() {
   return (
+    <>
+    <Navbar />
     <main>
-      <Navbar />
       <Header />
       <About />
       <Skills />
@@ -21,6 +22,7 @@ function App() {
       <Education />
       <Contact />
     </main>
+    </>
   )
 }
 
