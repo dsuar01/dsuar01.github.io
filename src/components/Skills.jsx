@@ -8,7 +8,7 @@ function Skills() {
       {skills.map((category) => (
         <div key={category.group}>
           <h3>{category.group}</h3>
-          <ul>
+          <ul className="chips">
             {category.items.map((item) => (
               <li key={item}>{item}</li>
             ))}
