@@ -75,7 +75,7 @@ h2::after {
     radial-gradient(circle at 75% 40%, rgba(56, 120, 220, 0.25), transparent 50%);}
 
 .request {
-  font-family: ui-monospace, Menlo, monospace;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
   color: var(--muted);
   margin: 0 0 16px;
 }
@@ -168,4 +168,23 @@ h2::after {
   border: 1px solid var(--border);
   border-radius: 999px;
   font-size: 0.9rem;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+#projects .section-title {
+  grid-column: 1 / -1;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
 }
