@@ -330,3 +330,29 @@ h2::after {
   margin: 0 0 12px;
   color: var(--muted);
 }
+
+.navbar-links a {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a.active {
+  color: var(--accent);
+}
+
+.navbar-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    padding-bottom: 8px;
+  }
+}
