@@ -28,6 +28,13 @@ function Header() {
           <h1>{profile.name}</h1>
           <p>{profile.role}</p>
           <p className="location">{profile.location}</p>
+                   <a
+            href="/Darien_Suarez_Perez_Resume_2026.pdf"
+            download
+            className="btn"
+          >
+            Download resume
+          </a>
         </div>
       </div>
     </header>
