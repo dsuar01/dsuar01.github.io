@@ -1,16 +1,14 @@
 function TimelineItem({ title, subtitle, place, date, details, points }) {
   return (
     <div className="timeline-item">
-      <div className="timeline-header">
-        <h3>{title}</h3>
-        <span className="timeline-date">{date}</span>
-      </div>
+      <span className="timeline-date">{date}</span>
+      <h3>{title}</h3>
       <p className="timeline-subtitle">
         {subtitle} · {place}
       </p>
-      {details && <p>{details}</p>}
+      {details && <p className="timeline-details">{details}</p>}
       {points && (
-        <ul>
+        <ul className="points">
           {points.map((point) => (
             <li key={point}>{point}</li>
           ))}

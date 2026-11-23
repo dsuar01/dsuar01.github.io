@@ -289,3 +289,44 @@ h2::after {
   align-self: flex-start;
   margin-top: auto;
 }
+
+.timeline-item {
+  position: relative;
+  margin-left: 6px;
+  padding: 0 0 40px 32px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item:last-of-type {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+
+.timeline-date {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  margin: 4px 0;
+}
+
+.timeline-subtitle,
+.timeline-details {
+  margin: 0 0 12px;
+  color: var(--muted);
+}

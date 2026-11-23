@@ -63,6 +63,16 @@ export const projects = [
 
 export const experience = [
   {
+    company: 'Revature',
+    role: 'Pre-Training: Full Stack Fundamentals',
+    place: 'Remote',
+    date: 'November 2026 – Present',
+    points: [
+      'Completing 40+ hands-on labs and coding challenges in Java covering object-oriented programming.',
+      'Building Java applications and managing all work with Git and GitHub.',
+    ],
+  },
+  {
     company: 'Coca-Cola Beverages Florida',
     role: 'Sales Representative',
     place: 'West Palm Beach, FL',
