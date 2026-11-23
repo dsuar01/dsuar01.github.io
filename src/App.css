@@ -235,18 +235,15 @@ h2::after {
   .request::after { animation: none; }
   .hero::before { animation: none; }
 }
-.actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-
 .btn {
+  display: inline-block;
+  margin-top: 24px;
   padding: 10px 20px;
   border-radius: 8px;
+  background: var(--accent);
+  color: #0d1b2a;
   font-weight: 600;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .btn:hover {
@@ -254,20 +251,41 @@ h2::after {
   transform: translateY(-2px);
 }
 
-.btn-primary {
-  background: var(--accent);
-  color: #0d1b2a;
+.project-card {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.btn-outline {
-  border: 1px solid var(--accent);
-  color: var(--accent);
+.project-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 40px rgba(255, 138, 61, 0.12);
+  transform: translateY(-4px);
 }
 
-.btn-outline:hover {
-  background: rgba(255, 138, 61, 0.1);
+.project-card .request {
+  font-size: 0.8rem;
+  margin-bottom: 12px;
 }
 
-@media (max-width: 640px) {
-  .actions { justify-content: center; }
+.project-card .request::after {
+  content: none;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+}
+
+.points {
+  padding-left: 18px;
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.project-card .chips {
+  margin-bottom: 24px;
+}
+
+.project-card .btn {
+  align-self: flex-start;
+  margin-top: auto;
 }
